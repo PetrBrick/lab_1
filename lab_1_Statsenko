@@ -1,0 +1,92 @@
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    cout << "1 13 49\n";
+    char ch;
+    cin >> ch;
+    cout << "1" << ch << "13" << ch << "49\n";
+    cout << "1  13  49\n";
+
+    double x, y, a, m, v, x0, y0, ro, b;
+   
+    cout << "a=";
+    cin >> a;
+    x = 12 * a * a + 7 * a - 12;
+    cout << "x=" << x;
+    cout << endl;
+   
+    y = 3 * x * x * x + 4 * x * x - 11 * x + 1;
+    cout << "y=" << y;
+   
+    cout << "v=";
+    cin >> v;
+    cout << "m=";
+    cin >> m;
+    ro = m / v;
+    cout << "ro=" << ro;
+    
+    cout << "a=";
+    cin >> a;
+    cout << "b=";
+    cin >> b;
+    x = b / a;
+    cout << "x=" << x;
+    
+    cout << "x=";
+    cin >> x;
+    cout << "y=";
+    cin >> y;
+    cout << "x0=";
+    cin >> x0;
+    cout << "y0=";
+    cin >> y0;
+    a = abs(x - x0);
+    v = abs(y - y0);
+    ro = sqrt(v * v + a * a);
+    cout << "r=";
+    cin >> ro;
+
+    cout << "a=";
+    cin >> a;
+    cout << "b=";
+    cin >> b;
+    cout << "x=";
+    cin >> x; 
+    v= sqrt(abs(a-b)* abs(a - b)/4 + x*x);
+    cout << "Pabcd= " << 2 * v + a + b << endl;
+
+    cout << "r1= ";
+    cin >> a;
+    cout << endl << "r2= ";
+    cin >> b;
+    cout << endl << "S= " << 3.14 * abs(a * a - b * b) << endl;
+
+    cout << "a=";
+    cin >> a;
+    cout << endl << "V= " << a * a * a << "  S= " << 6 * a * a << endl;
+
+    cout << "a=";
+    cin >> a;
+    cout << "P= " << 4 * a<< endl;
+
+    cout << "r=";
+    cin >> a;
+    cout<< "D= " << 2 * a << endl;
+
+    cout << "enter the name";
+    string l;
+    cin >> l;
+    cout << "Hello " << l << "! My name is C++" << endl;
+
+    char ch[7];
+    int i;
+    for (i = 0; i < 3; i++) {
+        if (ch[i] == ch[7 - i]) { a += 1; }
+    }
+    if (a == 3) { cout << "This is polindrom"; }
+    else { cout << "Sorry, it is not a polindrom"; }
+}
+
